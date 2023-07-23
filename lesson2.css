@@ -1,0 +1,74 @@
+		body{
+			font-family: Arial, Times, Sans-serif;
+			background-color: rgb(179, 244, 159);
+		}
+		header{
+			background-color: black;
+			color: rgb(6, 247, 6);
+			text-align: center;
+			padding:10px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		section{
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			border: 5px;
+			border-style: solid;
+            text-align: left;
+		}
+		footer{
+			background-color: slateblue;
+			color: antiquewhite;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+			border: 5px;
+			border-top: 0px;
+			border-color: black;
+			border-style: solid;
+
+		}
+		#good{
+			text-align: left;
+            float: left;
+		}
+        #button2{
+            float: left;
+        }
+        #date{
+            text-align: right;
+            float: right;
+        }
+        #button1{
+            text-align: right;
+            float: right;
+        }
+		#good{
+			text-align: left;
+		}
+        /* #img{
+            text-align: left;
+            border: 2px black;
+            height: 11px;
+            width: 90px;
+        } */
+        body section div image{
+            border: 2px black;
+        }
+		#fox{
+            display: flex;
+			position: relative;
+			text-align: right;
+        }
+        /* #art{
+            background-color: black;
+        } */
+		.h1,h2{
+			font-family: 'Space Mono', monospace;
+		}
+		/* #preloader{
+			background-image: url("../html_and_css/Assets/Images/1477.gif")
+		} */

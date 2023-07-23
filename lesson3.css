@@ -1,0 +1,14 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,235,200,1) 0%, rgba(1,243,228,1) 37%, rgba(243,0,255,1) 84%);
+}
+
+#home-bg-video{
+    position: fixed;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    background: url('/Assets/Images/grass.jpg') no-repeat;
+}
