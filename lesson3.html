@@ -13,8 +13,13 @@
     />
     <!-- Bootstrap Javascript -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
       crossorigin="anonymous"
     ></script>
     <!-- Google fonts -->
@@ -36,6 +41,8 @@
   </head>
 
   <body>
+    <!-- js file -->
+    <script src="lesson3.js" type="stylesheet"></script>
     <div class="alert alert-warning" role="alert">
       Nature's beauty shows itself in every flower petal, gentle breeze, and
       sunrise, reminding us of the amazing things that are all around us.
@@ -79,7 +86,7 @@
     </svg>
     <i class="fa-brands fa-pagelines"></i>
     <!-- icon in button -->
-    <button id="bt1" type="button">
+    <button id="bt1" type="button" class="btn btn-success">
       <img src="/Assets/Images/tree-fill.svg" />green
     </button>
     <div class="checkbox-wrapper-54">
@@ -88,13 +95,14 @@
         <span class="slider"></span>
       </label>
     </div>
-    <br><br>
+    <br /><br />
     <div class="checkbox-wrapper-5">
       <div class="check">
-        <input id="check-5" type="checkbox">
+        <input id="check-5" type="checkbox" />
         <label for="check-5"></label>
       </div>
     </div>
+    <br /><br />
     <section id="home">
       <!-- <video
         id="home-bg-video"
@@ -104,9 +112,47 @@
         loop
       ></video> -->
       <!-- <source src="/Assets/Videos/grass_-_66810 (720p).mp4" type="video/mp4"> -->
+      <button
+        class="button-89"
+        role="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <span class="material-symbols-outlined"> park </span> Save Nature
+      </button>
     </section>
-    <button class="button-89" role="button">
-      <span class="material-symbols-outlined"> park </span> Save Nature
-    </button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Thanks from Nature
+            </h5>
+            <button class="btn"data-bs-dismiss="modal"
+            aria-label="Close"><span class="material-symbols-outlined"> cancel </span></button>
+          </div>
+          <div class="modal-body">
+            <p>You need to follow the steps.</p>
+            <img id="img1" src="https://aambpublicoceanservice.blob.core.windows.net/oceanserviceprod/ocean/earthday-infographic-large.jpg" alt="Follow Steps">
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- Add additional buttons or actions as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
