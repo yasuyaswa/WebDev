@@ -5,7 +5,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,235,200,1) 0%, rgb
 body {
   background-image: url("Assets/Images/Wiretap.jpg");
 }
-#home-bg-video {
+/* #home-bg-video {
   position: fixed;
   height: auto;
   width: auto;
@@ -13,8 +13,8 @@ body {
   min-height: 100%;
   z-index: -2;
   background: url("/Assets/Images/grass.jpg") no-repeat;
-}
-#font1 {
+} */
+body {
   font-family: "Space Mono", monospace;
 }
 
@@ -43,7 +43,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -230,7 +230,38 @@ body {
   font-size: calc(0.6 * var(--size));
   line-height: 0;
 }
-#img1{
+#img1 {
   height: 450px;
   width: 450px;
+}
+
+#liveAlertPlaceholder {
+  text-align: left;
+  display: inline-block;
+}
+#liveAlertPlaceholder2 {
+  text-align: right;
+  display: inline-block;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This ensures the content stretches to at least the full viewport height */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* This allows the main content to take up the available space */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  border: 5px;
+  border-top: 5px;
+  border-color: black;
+  border-style: solid;
 }

@@ -38,57 +38,16 @@
       type="image/png"
       href="/Assets/Images/nature_FILL0_wght400_GRAD0_opsz48.png"
     />
+    <!-- jquery tag -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- FontAwesome tags -->
+    <link rel="stylesheet" href="CSS/FontAwesome/all.min.css" />
+    <script src="JS/FontAwesome/all.min.js"></script>
   </head>
 
   <body>
-    <!-- js file -->
-    <script src="lesson3.js" type="stylesheet"></script>
-    <div class="alert alert-warning" role="alert">
-      Nature's beauty shows itself in every flower petal, gentle breeze, and
-      sunrise, reminding us of the amazing things that are all around us.
-    </div>
-
-    <br />
-    <!-- google icons -->
-    <span class="material-symbols-outlined"> home </span>
-    <span class="material-symbols-outlined"> rocket_launch </span>
-    <span class="material-symbols-outlined"> park </span>
-    <span class="material-symbols-outlined"> eco </span>
-    <span class="material-symbols-outlined"> toggle_on </span>
-    <span class="material-symbols-outlined"> pets </span>
-    <!-- bootstrap font -->
-    <i class="bi input-tree"></i>
-
-    <!-- bootstrap icon -->
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="bi bi-tree"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z"
-      />
-    </svg>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
-      fill="currentColor"
-      class="bi bi-flower2"
-      viewBox="0 0 16 16"
-    >
-      <path
-        d="M8 16a4 4 0 0 0 4-4 4 4 0 0 0 0-8 4 4 0 0 0-8 0 4 4 0 1 0 0 8 4 4 0 0 0 4 4zm3-12c0 .073-.01.155-.03.247-.544.241-1.091.638-1.598 1.084A2.987 2.987 0 0 0 8 5c-.494 0-.96.12-1.372.331-.507-.446-1.054-.843-1.597-1.084A1.117 1.117 0 0 1 5 4a3 3 0 0 1 6 0zm-.812 6.052A2.99 2.99 0 0 0 11 8a2.99 2.99 0 0 0-.812-2.052c.215-.18.432-.346.647-.487C11.34 5.131 11.732 5 12 5a3 3 0 1 1 0 6c-.268 0-.66-.13-1.165-.461a6.833 6.833 0 0 1-.647-.487zm-3.56.617a3.001 3.001 0 0 0 2.744 0c.507.446 1.054.842 1.598 1.084.02.091.03.174.03.247a3 3 0 1 1-6 0c0-.073.01-.155.03-.247.544-.242 1.091-.638 1.598-1.084zm-.816-4.721A2.99 2.99 0 0 0 5 8c0 .794.308 1.516.812 2.052a6.83 6.83 0 0 1-.647.487C4.66 10.869 4.268 11 4 11a3 3 0 0 1 0-6c.268 0 .66.13 1.165.461.215.141.432.306.647.487zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-      />
-    </svg>
-    <i class="fa-brands fa-pagelines"></i>
-    <!-- icon in button -->
-    <button id="bt1" type="button" class="btn btn-success">
-      <img src="/Assets/Images/tree-fill.svg" />green
-    </button>
+    <br/>
+    
     <div class="checkbox-wrapper-54">
       <label class="switch">
         <input type="checkbox" />
@@ -112,6 +71,12 @@
         loop
       ></video> -->
       <!-- <source src="/Assets/Videos/grass_-_66810 (720p).mp4" type="video/mp4"> -->
+      <!-- <div id="alert1" class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div> -->
+      <div id="liveAlertPlaceholder"></div>
+      <div id="liveAlertPlaceholder2"></div>
+      <br />
       <button
         class="button-89"
         role="button"
@@ -134,25 +99,59 @@
             <h5 class="modal-title" id="exampleModalLabel">
               Thanks from Nature
             </h5>
-            <button class="btn"data-bs-dismiss="modal"
-            aria-label="Close"><span class="material-symbols-outlined"> cancel </span></button>
+            <button class="btn" data-bs-dismiss="modal" aria-label="Close">
+              <span class="material-symbols-outlined"> cancel </span>
+            </button>
           </div>
           <div class="modal-body">
             <p>You need to follow the steps.</p>
-            <img id="img1" src="https://aambpublicoceanservice.blob.core.windows.net/oceanserviceprod/ocean/earthday-infographic-large.jpg" alt="Follow Steps">
+            <img
+              id="img1"
+              src="https://aambpublicoceanservice.blob.core.windows.net/oceanserviceprod/ocean/earthday-infographic-large.jpg"
+              alt="Follow Steps"
+            />
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-outline-secondary"
+              id="liveAlertBtn"
+              class="btn btn-success"
+              onclick="Accept()"
               data-bs-dismiss="modal"
             >
-              Close
+              <i class="fas fa-check"></i>Accept
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="liveAlertBtn2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-x-lg"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                />
+              </svg>
+              Reject
             </button>
             <!-- Add additional buttons or actions as needed -->
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- js file -->
+    <script src="lesson3.js" ref="js"></script>
+    <footer>
+      "Nature's beauty shows itself in every flower petal, gentle breeze, and
+      sunrise, reminding us of the amazing things that are all around us."
+    </footer>
   </body>
 </html>
