@@ -236,7 +236,7 @@ body {
 }
 
 #liveAlertPlaceholder {
-  text-align: left;
+  text-align: right;
   display: inline-block;
 }
 #liveAlertPlaceholder2 {
