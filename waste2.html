@@ -28,7 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <!-- custom CSS -->
-    <link rel="stylesheet" href="lesson3.css" />
+    <link rel="stylesheet" href="waste2.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="CSS/FontAwesome/all.min.css" />
     <script src="JS/FontAwesome/all.min.js"></script>
@@ -48,8 +48,32 @@
   <body>
     <br />
 
+    <div class="checkbox-wrapper-54">
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <br /><br />
+    <div class="checkbox-wrapper-5">
+      <div class="check">
+        <input id="check-5" type="checkbox" />
+        <label for="check-5"></label>
+      </div>
+    </div>
     <br /><br />
     <section id="home">
+      <!-- <video
+        id="home-bg-video"
+        src="/Assets/Videos/grass_-_66810 (720p).mp4"
+        autoplay
+        muted
+        loop
+      ></video> -->
+      <!-- <source src="/Assets/Videos/grass_-_66810 (720p).mp4" type="video/mp4"> -->
+      <!-- <div id="alert1" class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div> -->
 
       <!-- toaster tag1 -->
       <div
@@ -87,43 +111,34 @@
           aria-live="assertive"
           aria-atomic="true"
         >
-        <div class="toast-header">
-          <span class="material-symbols-outlined"> park </span>
-          <strong class="me-auto"> Please</strong>
-          <small>a second ago</small>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="toast"
-            aria-label="Close"
-          ></button>
+          <div class="toast-header">
+            <span class="material-symbols-outlined"> park </span>
+            <strong class="me-auto"> Please</strong>
+            <small>a second ago</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">Save the Nature</div>
         </div>
-        <div class="toast-body">Save the Nature</div>
       </div>
-    </div>
-    <!-- toaster tag3 -->
-    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" id="energyToast" data-bs-autohide="false">
-      <div class="toast-body">
-        Hello, world! This is a toast message.
-      </div>
-    </div>
-    <!-- Save nature button -->
       <br />
 
       <button
         class="button-89"
         role="button"
         data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
+        data-bs-target="#exampleModal"
       >
         <i class="fa-solid fa-leaf"></i> Save Nature
       </button>
     </section>
-
-    <!-- Modal -->
     <div
       class="modal fade"
-      id="staticBackdrop"
+      id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -131,9 +146,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            <h5 class="modal-title" id="exampleModalLabel">
               Thanks for showing interest
-            </h1>
+            </h5>
             <button
               class="btn btn-outline-danger"
               data-bs-dismiss="modal"
@@ -143,17 +158,23 @@
             </button>
           </div>
           <div class="modal-body">
+            <p>You need to follow the steps.</p>
             <img
               id="img1"
               src="https://aambpublicoceanservice.blob.core.windows.net/oceanserviceprod/ocean/earthday-infographic-large.jpg"
               alt="Follow Steps"
             />
+            <!-- <ol type="1">
+              <li>Reduce, reuse, and recycle.</li>
+              <li>Conserve water.</li>
+              <li>Conserve energy.</li>
+              <li>Eat less meat.</li>
+              <li>Choose sustainable products.</li>
+            </ol> -->
           </div>
-          <!-- circuit -->
           <div class="checkbox-wrapper-54">
             <label
               class="switch"
-              id="switch"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
               data-bs-custom-class="custom-tooltip"
@@ -163,7 +184,6 @@
               <span class="slider"></span>
             </label>
           </div>
-
           <div class="modal-footer">
             <button
               type="button"
@@ -180,13 +200,14 @@
             >
               <i class="fas fa-times"></i> Reject
             </button>
+            <!-- Add additional buttons or actions as needed -->
           </div>
         </div>
       </div>
     </div>
 
     <!-- js file -->
-    <script src="lesson3.js" ref="js"></script>
+    <script src="waste2.js" ref="js"></script>
     <footer>
       "Nature's beauty shows itself in every flower petal, gentle breeze, and
       sunrise, reminding us of the amazing things that are all around us."

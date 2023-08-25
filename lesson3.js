@@ -1,50 +1,62 @@
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+  // toaster1
+  const toastTrigger = document.getElementById('liveToastBtn');
+  const toastLiveExample = document.getElementById('liveToast');
 
-  alertPlaceholder.append(wrapper)
-}
+  if (toastTrigger) {
+    const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+    toastTrigger.addEventListener('click', () => {
+      toastBootstrap.show();
+    });
+  }
+//toaster2
+  const toastTrigger2 = document.getElementById('liveToastBtn2');
+  const toastLiveExample2 = document.getElementById('liveToast2');
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Nice, You have saved the Nature', 'success')
+  if (toastTrigger2) {
+    const toastBootstrap2 = new bootstrap.Toast(toastLiveExample2);
+    toastTrigger2.addEventListener('click', () => {
+      toastBootstrap2.show();
+    });
+  }
+// toaser3 energy toast
+const energyToastElement = document.getElementById('energyToast');
+const energyToast = new bootstrap.Toast(energyToastElement);
+
+if (toastTrigger) {
+  const toastBootstrap3 = new bootstrap.Toast(toastLiveExample3);
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
   })
 }
+  // Initialize modal
+  // const myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  // const myInput = document.getElementById('myInput');
 
+  // myModal.addEventListener('shown.bs.modal', () => {
+  //   myInput.focus();
+  // });
 
-const alertPlaceholder2 = document.getElementById('liveAlertPlaceholder2')
-const appendAlert2 = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
-  alertPlaceholder2.append(wrapper)
-}
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
+});
 
-const alertTrigger2 = document.getElementById('liveAlertBtn2')
-if (alertTrigger2) {
-  alertTrigger2.addEventListener('click', () => {
-    appendAlert2('Please, Save the Nature','danger')
-  })
-}
-
-//$("btnAcc").html('You have Saved Nature')
-function Accept(){
-    // window.alert("You have Saved Nature");
-    var a =$("#alert1").html("You have Saved Nature");
-//     window.alert($("#alert1").html("You have Saved Nature"));
-}
+// circuit code
+var circuit = document.getElementById("circuit");
+circuit.addEventListener('change', function(){
+  if(this.checked){
+    alert("You have Saved Energy");
+  } else {
+    alert("Please Switch off to Save Energy");
+  }
+});

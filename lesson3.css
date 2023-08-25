@@ -231,8 +231,8 @@ body {
   line-height: 0;
 }
 #img1 {
-  height: 450px;
-  width: 450px;
+  height: 330px;
+  width: 465px;
 }
 
 #liveAlertPlaceholder {
@@ -265,3 +265,5 @@ footer {
   border-color: black;
   border-style: solid;
 }
+
+
