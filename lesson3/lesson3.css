@@ -3,7 +3,7 @@
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,235,200,1) 0%, rgba(1,243,228,1) 37%, rgba(243,0,255,1) 84%);
 } */
 body {
-  background-image: url("Assets/Images/Wiretap.jpg");
+  background-image: url("/Assets/Images/Wiretap.jpg");
 }
 /* #home-bg-video {
   position: fixed;
